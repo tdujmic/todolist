@@ -24,6 +24,7 @@ class TodolistControllerTest extends WebTestCase
         $form = $crawler->selectButton('Create')->form(array(
             'appbundle_todolist[description]'  => 'Test',
             'appbundle_todolist[title]'  => 'newtitle',
+            'appbundle_todolist[email]'  => 'tomodujmic@gmail.com',
             // ... other fields to fill
         ));
 
@@ -44,6 +45,7 @@ class TodolistControllerTest extends WebTestCase
         $form = $crawler->selectButton('Edit')->form(array(
             'appbundle_todolist[description]'  => 'Foo',
             'appbundle_todolist[title]'  => 'Foo',
+            'appbundle_todolist[email]'  => 'tomodujmic@gmail.com',
             // ... other fields to fill
         ));
 
